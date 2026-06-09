@@ -74,7 +74,7 @@ A {{PAGE_COUNT}}-page, mobile-first website on **{{TECH_STACK}}** featuring:
 - E-commerce / shopping cart functionality
 - Multi-language / multi-region versions
 - Custom web application development (member portals, dashboards, etc.)
-- Third-party tool subscriptions (see Section 7B — billed directly to you)
+- Third-party tool subscriptions (see Section 7C — billed directly to you)
 - Paid advertising creative or campaign management
 - Photography / videography of real people, locations, or products
 - Logo design from scratch (refinement of existing logo is included)
@@ -181,34 +181,50 @@ A website is a living asset. Without active care, it slows down, breaks, gets ha
 **What's *not* in the care plan:**
 - New cinematic videos or major imagery refreshes (billed at add-on rates)
 - Full redesigns or pages outside the original sitemap (quoted separately)
-- Third-party subscription costs (see Section 7B)
+- Third-party subscription costs (see Section 7C)
 - Paid ads creative or management
 
 ---
 
-## 7. Third-Party Costs (Billed Directly to You)
+## 7. Infrastructure & Third-Party Costs
 
-These services are **not** included in our fees. We'll set them up under **your** accounts so you own everything. Estimates below are 2026 retail prices — final cost depends on your providers and scale.
+We've designed our stack so **you only ever create two accounts**: a domain registrar and a Google account. Everything else runs on our infrastructure at no extra cost to you, and is fully portable to your own accounts if you ever leave us (see Section 10.2 — Account Ownership).
 
-### 7A. Required infrastructure
+Estimates below are 2026 retail prices.
 
-| Item | Recommended provider | Approx. cost ({{CURRENCY}}) | Notes |
+### 7A. Accounts in your name (always client-owned — 2 total)
+
+We set these up *with you* during a 10-minute screen-share on the kickoff call. They stay in your name forever, on your card, because losing access to them would be non-recoverable.
+
+| Account | Recommended provider | Cost ({{CURRENCY}}) | Why you own this |
 |---|---|---:|---|
-| **Domain name (.com / .net / .co)** | Cloudflare Registrar or Porkbun | $10–15 / year | At-cost; no markup. Avoid GoDaddy. |
-| **Domain name (.io / .ai / .app)** | Cloudflare or Namecheap | $35–90 / year | Premium TLDs cost more |
-| **Web hosting** | Cloudflare Pages / Vercel / Netlify (free tier) | **$0 / month** | Sufficient for ~95% of SME sites on our stack |
-| **Web hosting (heavier traffic)** | Vercel Pro / Netlify Pro | $20 / month | Recommended once traffic exceeds free-tier limits |
-| **Web hosting (WordPress)** | Cloudways / Kinsta / WP Engine | $25–115 / month | Only if you specifically need WordPress |
-| **CDN** | Cloudflare (free tier) | **$0 / month** | Included with our default stack |
-| **SSL certificate** | Let's Encrypt via Cloudflare | **$0 / month** | Automatic, no action needed |
-| **DNS** | Cloudflare | **$0 / month** | Included with registrar |
-| **Email hosting (business email @yourdomain.com)** | Google Workspace | $7 / user / month | Industry standard |
-| **Email hosting (budget option)** | Zoho Mail | $1–4 / user / month | Good for solo / very small teams |
-| **Email hosting (free option)** | Cloudflare Email Routing → personal Gmail | **$0 / month** | Forwards only; can't send *as* yourdomain natively |
+| **Domain name** (.com / .net / .co) | Cloudflare Registrar or Porkbun | $10–15 / year | Your business identity. Must never be tied to a vendor. |
+| **Domain name** (.io / .ai / .app) | Cloudflare or Namecheap | $35–90 / year | Premium TLDs cost more. |
+| **Google Workspace** (business email + GA4 + Search Console) | Google | $7 / user / month | Legal records, customer correspondence, and historical analytics that can't be transferred later. |
+| **Google Workspace** (budget alternative) | Zoho Mail | $1–4 / user / month | Good for solo operators. |
+| **Google Workspace** (free alternative) | Cloudflare Email Routing → personal Gmail | $0 / month | Forwards only; can't send *as* yourdomain natively. |
 
-**Typical monthly infrastructure cost for a small business:** **$7–$30/month** (mostly email). Many of our clients pay **$0** for hosting + CDN + SSL combined.
+**Your typical out-of-pocket: ~$8/month** (domain + 1 Google Workspace seat).
 
-### 7B. Optional tools (turn on as you grow)
+### 7B. Hosted on our infrastructure (no account, no cost to you)
+
+We host these on our agency accounts so you don't manage 6 vendors. Included in your care plan. If you ever leave, see Section 10.2 — we transfer or migrate everything within 5 business days.
+
+| Service | Provider we use | What it would cost on your own | Why we host it |
+|---|---|---:|---|
+| **Source code repository** | GitHub (our org) | Free | Transferred to your GitHub org on exit (1 click). |
+| **Web hosting** | Cloudflare Pages / Vercel / Netlify | $0 (free tier covers ~95% of SME sites) | We deploy from CI. Portable to any modern host. |
+| **CDN** | Cloudflare | $0 | Tied to DNS — see below. |
+| **DNS management** | Cloudflare | $0 | Pointed at your domain; you keep registrar access. |
+| **SSL certificate** | Let's Encrypt via Cloudflare | $0 | Auto-renewed; portable. |
+| **Form handling** | Web3Forms / Formspree | $0–15 / month | Swappable in minutes. |
+| **Error monitoring** | Sentry (free tier) | $0 | Included in care plan reports. |
+| **Uptime monitoring** | Better Stack / UptimeRobot | $0 | We get the alerts, you get the reports. |
+| **Daily backups** | Our backup pipeline | $0 | 30-day retention; downloadable bundle on request. |
+
+**Your cost: $0.** Our cost is absorbed by the care plan.
+
+### 7C. Optional growth tools (turn on when you need them, owned by you)
 
 | Item | Recommended provider | Approx. cost ({{CURRENCY}}) | When you need it |
 |---|---|---:|---|
@@ -228,23 +244,21 @@ These services are **not** included in our fees. We'll set them up under **your*
 | **Premium stock** | Adobe Stock | $30+ / month | Optional |
 | **Error monitoring** | Sentry (free tier) | $0 | Included in care plan |
 
-### 7C. Total estimated ongoing cost (recommended setup)
+### 7D. Total estimated ongoing cost (recommended setup)
 
-| Line item | Monthly ({{CURRENCY}}) | Annual ({{CURRENCY}}) |
-|---:|---:|---:|
-| Domain (annualized) | ~$1 | $12 |
-| Hosting (Cloudflare Pages) | $0 | $0 |
-| CDN (Cloudflare) | $0 | $0 |
-| SSL | $0 | $0 |
-| Email (Google Workspace × 1 user) | $7 | $84 |
-| Email marketing (MailerLite free) | $0 | $0 |
-| Booking (Cal.com free) | $0 | $0 |
-| Analytics (GA4 free) | $0 | $0 |
-| **Subtotal — third-party** | **~$8** | **~$96** |
-| **Care plan ({{CARE_PLAN_TIER}})** | **{{CARE_PLAN_PRICE}}** | **{{CARE_PLAN_ANNUAL}}** |
-| **Total ongoing** | **{{TOTAL_MONTHLY}}** | **{{TOTAL_ANNUAL}}** |
+| Line item | Where it lives | Monthly ({{CURRENCY}}) | Annual ({{CURRENCY}}) |
+|---|---|---:|---:|
+| Domain (annualized) | Your account | ~$1 | $12 |
+| Google Workspace × 1 user | Your account | $7 | $84 |
+| Hosting / CDN / SSL / DNS / forms / monitoring / backups | **Our infrastructure** | **$0** | **$0** |
+| Email marketing (MailerLite free) | Your account | $0 | $0 |
+| Booking (Cal.com free) | Your account | $0 | $0 |
+| Analytics (GA4 free) | Your account | $0 | $0 |
+| **Subtotal — accounts in your name** | | **~$8** | **~$96** |
+| **Care plan ({{CARE_PLAN_TIER}})** | Billed by us | **{{CARE_PLAN_PRICE}}** | **{{CARE_PLAN_ANNUAL}}** |
+| **Total ongoing** | | **{{TOTAL_MONTHLY}}** | **{{TOTAL_ANNUAL}}** |
 
-> 💡 For ~{{TOTAL_MONTHLY}}/month — less than most coffee budgets — your website stays online, secure, fast, and updated without you lifting a finger.
+> 💡 You manage 2 accounts (domain + Google). We manage everything else. For ~{{TOTAL_MONTHLY}}/month total, your website stays online, secure, fast, and updated without you lifting a finger.
 
 ---
 
@@ -280,12 +294,32 @@ These services are **not** included in our fees. We'll set them up under **your*
 
 A full Master Services Agreement will be provided alongside the deposit invoice. Key terms:
 
-- **Ownership:** All deliverables transfer to client upon final payment. Pre-existing tools, frameworks, and proprietary processes remain ours.
-- **AI-generated assets:** Generated under our commercial license. Client receives perpetual, royalty-free, non-exclusive rights for use on the delivered website and related marketing.
+### 10.1 Ownership of work
+
+- **Deliverables:** All custom-built website source code, copy, brand assets, and configurations transfer to client upon final payment. Pre-existing tools, prompt libraries, component libraries, methodologies, and internal frameworks remain ours.
+- **AI-generated assets:** Generated under our commercial license from the source tools. Client receives a **perpetual, worldwide, royalty-free, sublicensable** license to use the delivered AI visuals on the website and in related marketing. (Note: copyright status of pure AI generations varies by jurisdiction; the license above conveys full commercial usage rights regardless of underlying copyrightability.)
+- **Customer data, email lists, analytics history:** Yours from day one. We never own, sell, or repurpose your data.
+
+### 10.2 Account ownership & exit plan
+
+To minimize friction during the project and protect you from lock-in at the end:
+
+- **You always own:** your domain name, Google Workspace, payment processor (Stripe etc.), GA4 / Search Console, and any CRM or email-marketing accounts.
+- **We host on our infrastructure (no account needed from you):** source code repo (GitHub), web hosting (Cloudflare Pages / Vercel / Netlify), CDN, DNS, SSL, forms, monitoring, backups. See Section 7B.
+- **If you ever leave us, within 5 business days you receive:**
+  1. Source code repository transferred to your GitHub organization (or zip archive)
+  2. Full original asset archive — Higgsfield exports, Figma sources, raw imagery
+  3. Credentials & access doc for every service in your name
+  4. Architecture 1-pager — exactly where everything runs and how to redeploy
+  5. 30-day grace period to answer any question from your new vendor, at no cost
+- **DNS pointing change** is a 5-minute action you control via your registrar — we cannot hold your site hostage.
+
+### 10.3 Other terms
+
 - **Confidentiality:** Mutual NDA on all business information shared.
 - **Warranty:** 30 days post-launch bug-fix warranty included free of charge. After that, covered under the care plan or billed at $150/hour.
 - **Liability:** Capped at the total fees paid in the 12 months preceding any claim.
-- **Termination:** Either party may terminate with 14 days' written notice. Deposit is non-refundable. Work completed up to termination date is billable.
+- **Termination:** Either party may terminate with 14 days' written notice. Deposit is non-refundable. Work completed up to termination date is billable. Exit plan in 10.2 applies regardless of which party terminates.
 - **Disputes:** Governed by the laws of {{JURISDICTION}}.
 
 ---
