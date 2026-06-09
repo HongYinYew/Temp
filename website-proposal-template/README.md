@@ -17,7 +17,9 @@ A reusable, opinionated proposal template for selling websites to SMEs — built
    - `{{YOUR_AGENCY_NAME}}`, `{{YOUR_NAME}}`, `{{YOUR_EMAIL}}`, `{{YOUR_PHONE}}`
    - `{{DATE}}`, `{{VALID_UNTIL_DATE}}` (recommend 14 days out)
    - `{{TIER_NAME}}`, `{{TIER_PRICE}}`, `{{PAGE_COUNT}}`, `{{TECH_STACK}}`
-   - `{{CURRENCY}}` (default USD — change to SGD/MYR/etc. as needed)
+   - `{{CURRENCY}}` (defaults to MYR — change if selling abroad)
+   - `{{SST_STATUS}}` (state whether you're SST-registered)
+   - `{{STATE}}` (e.g. Kuala Lumpur, Selangor — for jurisdiction)
    - `{{TIMELINE_WEEKS}}`, `{{START_DATE}}`, `{{LAUNCH_DATE}}`
 3. **Delete** the tier rows / add-ons the client isn't getting (or keep them visible as anchors).
 4. **Update prices** to current rates. Recurring-cost figures are 2026 ballpark estimates — verify against the provider before sending.
@@ -33,10 +35,11 @@ A reusable, opinionated proposal template for selling websites to SMEs — built
 
 ## Customization tips
 
-- If you sell in a non-USD market, swap `USD` for your currency and convert prices using your *list price* (don't just FX-convert — round to nice local-feeling numbers, e.g. `$5,500 USD → S$7,500 SGD`).
+- This template is **Malaysia-localized** by default: prices in MYR, SST 8% references, FPX/DuitNow payment methods, .com.my domain guidance, Malaysian jurisdiction. If you sell into Singapore or international markets, duplicate `PROPOSAL.md`, convert prices using your *list price* in the target market (don't just FX-convert — round to nice local-feeling numbers, e.g. `RM 12,800 MYR → S$4,200 SGD → $3,800 USD`).
 - If you don't use Higgsfield/AI video, delete the "Cinematic Hero Film" line items and rename the Growth tier.
 - If you're a solo operator, soften the "team" language in section 12.
 - For regulated industries (legal, medical, financial) remove AI-generated imagery references and add a compliance-review line item.
+- If you're not yet SST-registered (under RM 500,000 annual turnover), update Section 5.4 accordingly and remove the SST line from 5.2.
 
 ## Legal note
 
