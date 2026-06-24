@@ -1,0 +1,15 @@
+{
+  "id": "vanishing-paycheck",
+  "format": "reel",
+  "topic": "Your paycheck disappears by the 15th",
+  "hook": "Broke by the 15th? It's not your salary.",
+  "beats": [
+    { "t": "0-2",   "overlay": "Broke by the 15th? It's not your salary.", "vo": "If your money disappears before payday, it is almost never the big stuff.", "broll": ["empty wallet opening", "calendar pages flying"] },
+    { "t": "2-12",  "overlay": "It's the leaks.", "vo": "It is the leaks. The small taps you never notice add up faster than rent.", "broll": ["phone tap to pay", "coffee on desk"] },
+    { "t": "12-40", "overlay": "Read your last 30 days out loud", "vo": "Open your bank app and read the last thirty days out loud. Circle every subscription, every delivery, every quick tap. Most people find two to four hundred dollars a month they forgot they were spending.", "broll": ["scrolling bank transactions", "hand circling items"] },
+    { "t": "40-52", "overlay": "Give every dollar a job", "vo": "Then give every dollar a job before the month starts. Fifty percent needs, thirty percent wants, twenty percent savings and debt.", "broll": ["pie chart animation", "notebook budgeting"] }
+  ],
+  "cta": { "overlay": "Save this. Do the read-out tonight.", "vo": "Save this and follow for the no-budget money system." },
+  "caption": "Read your last 30 days out loud. You'll be shocked. 👀\n\nThe leaks — not the big purchases — are what keep you broke. Give every dollar a job before the month starts.\n\nSave this for your next payday. 💸",
+  "hashtags": ["#personalfinance", "#moneytips", "#budgeting", "#paychecktopaycheck", "#savemoney", "#financialfreedom"]
+}

@@ -1,0 +1,14 @@
+{
+  "_comment": "30-day plan. Weeks 1-2 = growth, Weeks 3-4 = monetisation. Each post points at a scriptId in content/scripts/. Add the remaining weeks as you author their scripts.",
+  "weeks": {
+    "1": [
+      { "day": 1, "format": "reel",     "scriptId": "vanishing-paycheck", "cta": "save-follow" },
+      { "day": 2, "format": "carousel", "scriptId": "spending-leaks",     "cta": "save-follow" },
+      { "day": 3, "format": "reel",     "scriptId": "hysa",               "cta": "save-follow" },
+      { "day": 4, "format": "carousel", "scriptId": "budget-50-30-20",    "cta": "save-follow" },
+      { "day": 5, "format": "reel",     "scriptId": "credit-score",       "cta": "save-follow" },
+      { "day": 6, "format": "reel",     "scriptId": "emergency-fund",     "cta": "save-follow" },
+      { "day": 7, "format": "carousel", "scriptId": "weekend-money-wins", "cta": "save-follow" }
+    ]
+  }
+}

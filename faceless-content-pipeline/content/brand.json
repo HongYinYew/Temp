@@ -1,0 +1,27 @@
+{
+  "accountHandle": "@yourfinancepage",
+  "voice": {
+    "elevenLabsVoiceId": "pNInz6obpgDQGcFmaJgB",
+    "elevenLabsVoiceName": "Adam",
+    "modelId": "eleven_flash_v2_5",
+    "settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.2, "use_speaker_boost": true }
+  },
+  "reel": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fontFamily": "Montserrat",
+    "captionStyle": "bold-centered-one-line",
+    "endCard": "Save this & follow for more."
+  },
+  "carousel": {
+    "width": 1080,
+    "height": 1350,
+    "fontFamily": "Montserrat",
+    "brandColors": { "bg": "#0E0E0E", "fg": "#FFFFFF", "accent": "#16C784" }
+  },
+  "defaultHashtags": [
+    "#personalfinance", "#moneytips", "#budgeting", "#savemoney",
+    "#financialfreedom", "#moneymanagement", "#sidehustle", "#investing101"
+  ]
+}

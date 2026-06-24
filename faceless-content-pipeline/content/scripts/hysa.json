@@ -1,0 +1,15 @@
+{
+  "id": "hysa",
+  "format": "reel",
+  "topic": "Money sitting in checking earns 0%",
+  "hook": "Your money is losing $400 a year right now.",
+  "beats": [
+    { "t": "0-2",   "overlay": "Your money is losing $400 a year right now.", "vo": "And it is sitting in your checking account.", "broll": ["cash slowly fading", "bank app on phone"] },
+    { "t": "2-12",  "overlay": "Checking = 0% interest", "vo": "If your savings sit in a normal checking account, the bank is using your money for free.", "broll": ["bank building", "zero on a screen"] },
+    { "t": "12-42", "overlay": "Open a HYSA", "vo": "Move it to a high-yield savings account. Same safety, same insurance, but instead of zero you earn around four percent. Ten thousand dollars makes you four hundred dollars for doing absolutely nothing, and you can still pull it out any time.", "broll": ["screen recording open account", "interest counter ticking up"] },
+    { "t": "42-52", "overlay": "Keep 1 month in checking", "vo": "Leave one month of expenses in checking for bills, and park the rest in the high-yield account.", "broll": ["two jars money moving"] }
+  ],
+  "cta": { "overlay": "Move it this week.", "vo": "Save this and follow. Free money is the easiest money." },
+  "caption": "0% checking is a silent tax. A HYSA fixes it in 10 minutes. 🏦\n\nSame safety, ~4% instead of 0%. $10k = ~$400/yr for doing nothing.\n\nSave this and move your money this week.",
+  "hashtags": ["#personalfinance", "#hysa", "#savemoney", "#moneytips", "#financialfreedom", "#savingsaccount"]
+}

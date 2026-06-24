@@ -1,0 +1,15 @@
+{
+  "id": "emergency-fund",
+  "format": "reel",
+  "topic": "No emergency fund",
+  "hook": "You're one $600 repair from disaster.",
+  "beats": [
+    { "t": "0-2",   "overlay": "You're one $600 repair from disaster.", "vo": "Let us fix that this month.", "broll": ["car warning light flashing"] },
+    { "t": "2-12",  "overlay": "No buffer = debt on every surprise", "vo": "With no buffer, every surprise becomes credit card debt. That is the trap.", "broll": ["dominoes falling"] },
+    { "t": "12-42", "overlay": "Step 1: the $1,000 mini-fund", "vo": "Forget six months of expenses for now, that number scares people into doing nothing. Start with one thousand dollars. Open a separate account so you can't touch it, automate fifty a week, sell three things you don't use, and put any windfall straight in. Most people hit a thousand in eight to twelve weeks.", "broll": ["jar filling", "progress bar moving"] },
+    { "t": "42-52", "overlay": "Then build to 3 months", "vo": "Once the mini-fund is done, grow it to three months of expenses. But the first grand is what stops the bleeding.", "broll": ["bar extending further"] }
+  ],
+  "cta": { "overlay": "Start with $1k. Save this.", "vo": "Follow for the full safety-net plan." },
+  "caption": "Don't aim for 6 months. Aim for $1,000 first. 🛟\n\nA separate account + $50/week + selling 3 things = your first grand in ~8-12 weeks. That's what stops a surprise from becoming debt.\n\nSave this and start this week.",
+  "hashtags": ["#emergencyfund", "#personalfinance", "#savemoney", "#moneytips", "#budgeting", "#financialfreedom"]
+}

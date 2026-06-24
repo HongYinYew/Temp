@@ -1,0 +1,15 @@
+{
+  "id": "credit-score",
+  "format": "reel",
+  "topic": "Credit score stuck under 600",
+  "hook": "Your credit score isn't low because you're broke.",
+  "beats": [
+    { "t": "0-2",   "overlay": "Your credit score isn't low because you're broke.", "vo": "It is low because of one number.", "broll": ["credit score dial in the red"] },
+    { "t": "2-12",  "overlay": "It's your utilization", "vo": "Thirty percent of your score is how much of your limit you use. Go over thirty percent and your score tanks, even if you pay on time.", "broll": ["bar filling past 30 percent turning red"] },
+    { "t": "12-42", "overlay": "3 moves that work fast", "vo": "Three moves. One, pay your card under ten percent of the limit, not just the minimum. Two, ask for a credit limit increase, which instantly lowers your ratio. Three, never close your oldest card, because age of credit matters. Do these and your score can move in one to two billing cycles.", "broll": ["three text cards sliding in"] },
+    { "t": "42-52", "overlay": "Bonus: AZEO", "vo": "Pay every card to zero except one, leaving a tiny balance. It is a trick that can squeeze out extra points.", "broll": ["cards animating to zero"] }
+  ],
+  "cta": { "overlay": "Follow for the 90-day credit fix.", "vo": "Save this and follow. Your next loan approval depends on it." },
+  "caption": "A 600 score isn't permanent. These 3 moves work in weeks. 📈\n\nUtilization is 30% of your score — get under 10%, raise your limit, keep old cards open.\n\nSave this for your next billing cycle.",
+  "hashtags": ["#creditscore", "#personalfinance", "#creditrepair", "#moneytips", "#financialfreedom", "#creditcards"]
+}

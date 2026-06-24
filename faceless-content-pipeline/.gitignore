@@ -1,0 +1,11 @@
+# Secrets — NEVER commit real keys
+.env
+*.local
+
+# Generated assets
+output/
+node_modules/
+
+# OS noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+{
+  "name": "faceless-content-pipeline",
+  "version": "0.1.0",
+  "description": "Automated weekly content pipeline for a faceless personal-finance Instagram account. Turns a content calendar into 7 ready-to-schedule assets (reels + carousels).",
+  "type": "module",
+  "bin": {
+    "weekly": "src/index.js"
+  },
+  "scripts": {
+    "generate": "node src/index.js",
+    "generate:mock": "node src/index.js --mock",
+    "week1:mock": "node src/index.js --week 1 --mock"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
